@@ -35,13 +35,28 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "AvenirLTStd";
+      src: url("../fonts/AvenirLTStd-Black.otf");
+      src: url("../fonts/AvenirLTStd-Book.otf");
+      src: url("../fonts/AvenirLTStd-Roman.otf");
+}
+
+
+
+
+
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+ 
 
 }
+
 
 html {
   font-family: sans-serif;
@@ -127,14 +142,28 @@ h2,
 h3,
 h4,
 h5,
+h6, a, span {
+
+ font-family: "AvenirLTStd";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  
+
 }
 
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-family: 'Merriweather', serif;
+  color: #0032a0 
 }
 
 abbr[title],
@@ -11796,7 +11825,7 @@ h5,
 .h4,
 .h5 {
   line-height: 1.5;
-  color: #203d67;
+  color: #97d700;
   font-weight: 400;
 }
 
@@ -12153,10 +12182,9 @@ h5,
   content: '';
   opacity: 1;
   z-index: 0;
-  background-color: #5C00C2;
-  ;
+  background-color: #054EFB;
   /* For browsers that do not support gradients */
-  background-image: linear-gradient(to right, #4F2EFF, #6100E1, #7B17FF);
+ background-image: radial-gradient(circle, #5ab6ff, #13a0ff, #0088ff, #006eff, #054efb);
   /* Standard syntax (must be last) */
 }
 
@@ -12443,26 +12471,26 @@ h5,
 }
 
 .btn.btn-tertiary {
-  background: #ff8ba7;
-  border: 1px solid #ff8ba7;
+  background: #054EFB;
+  border: 1px solid #054EFB;
   color: #fff;
 }
 
 .btn.btn-tertiary:hover {
-  border: 1px solid #ff7294;
-  background: #ff7294;
+  border: 1px solid #0032a8;
+  background: #0032a8;
   color: #fff;
 }
 
 .btn.btn-tertiary.btn-outline-tertiary {
-  border: 2px solid #ff8ba7;
+  border: 2px solid #054EFB;
   background: transparent;
-  color: #ff8ba7;
+  color: #054EFB;
 }
 
 .btn.btn-tertiary.btn-outline-tertiary:hover {
   border: 2px solid transparent;
-  background: #ff8ba7;
+  background: #054EFB;
   color: #fff;
 }
 
@@ -12505,7 +12533,7 @@ h5,
   background: #fff;
   padding: 40px;
   border-radius: 5px;
-  margin-top: -60px;
+  margin-top: -80px;
 }
 
 .intro h3 {
@@ -12675,7 +12703,7 @@ h5,
 }
 
 .services .icon.icon-2 span {
-  color: #ff8ba7;
+  color: #054EFB;
 }
 
 .services .media-body {
@@ -12881,24 +12909,26 @@ textarea.form-control {
   overflow: hidden;
   border-radius: 4px;
   margin-bottom: 30px;
-  -webkit-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
+  /* -webkit-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05); */
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  padding: 10px;
 }
 
 .staff .img-wrap {
-  height: 300px;
+  height: 280px;
 }
 
 .staff .img {
+  background-size: contain;
   width: 100%;
   display: block;
-  background-position: top center;
+  background-position: center;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -12908,7 +12938,7 @@ textarea.form-control {
 
 .staff .text {
   position: relative;
-  background: #fff;
+  /* background: #fff; */
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -12930,7 +12960,7 @@ textarea.form-control {
 }
 
 .staff .text .position {
-  color: #ff8ba7;
+  color: #054EFB;
   display: block;
   font-weight: 500;
   display: inline-block;
@@ -12975,9 +13005,8 @@ textarea.form-control {
 
 .staff:hover,
 .staff:focus {
-  -webkit-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
-  -moz-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
-  box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
+ 
+  padding: 0;
 }
 
 .staff:hover .ftco-social,
@@ -12988,12 +13017,12 @@ textarea.form-control {
 
 .staff:hover .img,
 .staff:focus .img {
-  margin-top: -10px;
+  margin-top: -5px;
 }
 
 .staff:hover .text h3,
 .staff:focus .text h3 {
-  color: #3f52e3;
+ color: #97d700;
 }
 
 .ftco-social {
@@ -13331,7 +13360,7 @@ textarea.form-control {
 
 .testimony-section .owl-dots .owl-dot.active,
 .testimony-section .owl-dots .owl-dot:focus {
-  background: #ff8ba7;
+  background: #054EFB;
   outline: none !important;
 }
 
@@ -13766,7 +13795,7 @@ textarea.form-control {
   right: 0;
   bottom: -20px;
   content: '';
-  background: #3f52e3;
+  border: 1px solid #1900ff;
   border-radius: 4px;
   z-index: -1;
   opacity: 0;
@@ -13794,6 +13823,7 @@ textarea.form-control {
   font-weight: normal;
   text-transform: uppercase;
   font-weight: 600;
+  color: #000;
 }
 
 .block-7 .price {
@@ -13869,12 +13899,12 @@ textarea.form-control {
 }
 
 .block-7:hover .heading-2 {
-  color: #fff;
+  color: #97d700;
   font-weight: 700;
 }
 
 .block-7:hover .price sup {
-  color: #fff;
+  color: rgb(3, 3, 3);
 }
 
 .block-7:hover .price .number {
@@ -13886,7 +13916,7 @@ textarea.form-control {
 }
 
 .block-7:hover .pricing-text li {
-  color: rgba(255, 255, 255, 0.8);
+  color: #054EFB
 }
 
 .block-7:hover .pricing-text li strong {
