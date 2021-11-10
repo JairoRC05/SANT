@@ -39,6 +39,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://www.dafontfree.net/embed/YXZlbmlyLWhlYXZ5JmRhdGEvMjIvYS8xMTE4MTkvQUVILnR0Zg");
 
 @font-face {
 	font-family: "AvenirLTStd";
@@ -46,6 +47,8 @@
 	src: url("../fonts/AvenirLTStd-Book.otf");
 	src: url("../fonts/AvenirLTStd-Roman.otf");
 }
+
+
 
 *,
 *::before,
@@ -139,10 +142,9 @@ h3,
 h4,
 h5,
 h6,
-a,
 span {
-	font-family: "AvenirLTStd";
-  text-transform: uppercase;
+	font-family: 'avenir-heavy', sans-serif;
+
 }
 
 h1,
@@ -153,13 +155,16 @@ h5,
 h6 {
 	margin-top: 0;
 	margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 p {
 	margin-top: 0;
 	margin-bottom: 1rem;
-	font-family: "Merriweather", serif;
+font-family: "Merriweather", serif;	
 	color: #0032a0;
+  text-transform: initial;
 }
 
 abbr[title],
