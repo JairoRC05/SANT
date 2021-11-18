@@ -39,7 +39,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
-@import url("https://www.dafontfree.net/embed/YXZlbmlyLWhlYXZ5JmRhdGEvMjIvYS8xMTE4MTkvQUVILnR0Zg");
+
 
 @font-face {
 	font-family: "AvenirLTStd";
@@ -47,6 +47,13 @@
 	src: url("../fonts/AvenirLTStd-Book.otf");
 	src: url("../fonts/AvenirLTStd-Roman.otf");
 }
+
+
+@font-face {
+	font-family: "AvenirHeavy";
+	src: url("../fonts/AEH.ttf");
+}
+
 
 
 
@@ -142,8 +149,8 @@ h3,
 h4,
 h5,
 h6,
-span {
-	font-family: 'avenir-heavy', sans-serif;
+span, a{
+	font-family: 'AvenirHeavy', sans-serif;
 
 }
 
@@ -12250,7 +12257,7 @@ h5,
 	letter-spacing: 0.1em;
 }
 
-//Color de letra
+/* Color de letra */
 .ftco-navbar-light.scrolled .nav-link {
 	padding-top: 0.9rem !important;
 	padding-bottom: 0.9rem !important;
@@ -12290,14 +12297,14 @@ h5,
 	z-index: 0;
 }
 
-.hero-wrap .overlay {
+.overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	content: "";
-	opacity: 1;
+	opacity: 0.9;
 	z-index: 0;
 	background-color: #054efb;
 	/* For browsers that do not support gradients */
@@ -12326,7 +12333,7 @@ h5,
 }
 
 .hero-wrap .slider-text .one-third {
-	width: 60%;
+	/* width: 60%; */
 	position: relative;
 	z-index: 0;
 }
@@ -14400,3 +14407,25 @@ textarea.form-control {
 		stroke-dashoffset: -136px;
 	}
 }
+
+.h1{
+	font-size: 60px !important;
+	color: #fff;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+@media (max-width: 768px) {
+.h1{
+	font-size: 44px !important;
+
+  text-align: center;
+}
+
+}
+
+
+
+.leyend{
+  color: #fff !important;
+  }
