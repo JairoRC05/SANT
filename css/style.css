@@ -12317,6 +12317,8 @@ h5,
 		#054efb
 	);
 	/* Standard syntax (must be last) */
+	background-image: url(../images/FondoWebS&T.jpg);
+	background-position: left;
 }
 
 .hero-wrap .slider-text {
