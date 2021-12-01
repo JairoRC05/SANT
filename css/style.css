@@ -13042,17 +13042,17 @@ textarea.form-control {
 	margin-bottom: 30px;
 	/* -webkit-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05); */
+  box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);  */
 	-moz-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
 	-ms-transition: all 0.3s ease;
 	transition: all 0.3s ease;
-	padding: 10px;
+	padding: 15px;
 }
 
 .staff .img-wrap {
-	height: 280px;
+	height: 300px;
 }
 
 .staff .img {
@@ -13136,13 +13136,15 @@ textarea.form-control {
 
 .staff:hover,
 .staff:focus {
-	padding: 0;
+	padding: 10px;
 }
+
+
 
 .staff:hover .ftco-social,
 .staff:focus .ftco-social {
 	opacity: 1;
-	top: -60px;
+	top: 0px;
 }
 
 .staff:hover .img,
@@ -13150,10 +13152,14 @@ textarea.form-control {
 	margin-top: -5px;
 }
 
-.staff:hover .text h3,
+ .staff:hover .text h3,
 .staff:focus .text h3 {
-	color: #97d700;
-}
+	color: #0B3A50;
+} 
+
+
+
+
 
 .ftco-social {
 	padding: 0;
